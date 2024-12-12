@@ -30,7 +30,8 @@ samples = jack1mk(data)
 
 Nsamples = length(samples)
 for i=1:Nsamples
-    # O = f(samples[i])
+    # Oi = f(samples[i])
+    # samples[i] = Oi
 end
 
 av, er = jack1er(samples) # <O>+/-er
