@@ -1,4 +1,4 @@
-function jack1mk(data) # making JK samples
+function jack1mk(data) # to make samples
     Ndata = length(data)
     sum = 0.0
     for i=1:Ndata
@@ -10,7 +10,7 @@ function jack1mk(data) # making JK samples
     end
     return samples
 end
-function jack1er(samples) # evaluate mean value and error
+function jack1er(samples) # to evaluate mean value and error
     Nsamples = length(samples)
     av = 0.0
     er = 0.0
@@ -25,18 +25,13 @@ function jack1er(samples) # evaluate mean value and error
 end
 
 
-# step1
 data = [1,2,3,4,5,6]
 samples = jack1mk(data)
 
-#step2
-# Main Calculation
 Nsamples = length(samples)
 for i=1:Nsamples
-    #do something on each element of "samples"
-    # samples[i]+=... 
+    # O = f(samples)
 end
 
-#step3
-av, er = jack1er(samples)
+av, er = jack1er(samples) # <O>+/-er
 println("$av +/- $er")
