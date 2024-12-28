@@ -20,7 +20,7 @@ function jack1er(samples) # to evaluate mean value and error
     end
     av/=Nsamples
     er/=Nsamples
-    er = sqrt( (er-av^2)/(Nsamples-1) )
+    er = sqrt( (er-av^2)*(Nsamples-1) )
     return av,er
 end
 
